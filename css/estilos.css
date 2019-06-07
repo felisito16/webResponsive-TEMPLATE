@@ -1,0 +1,55 @@
+/* ESTILOS CSS */
+#titulo-xs {
+    display: none
+}
+
+@media (max-width:438px) {
+    #titulo-xs {
+        display: unset
+    }
+
+    #titulo-lg {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    #divIconoProyecto {
+        vertical-align: middle;
+        display: inline-block;
+        margin: auto;
+    }   
+}
+
+.text-primary{
+    color:#376ab9!important
+}
+
+.imgTeam{
+    width: 250px;
+}
+
+.equipo{
+    background-color: #254f90
+}
+
+.tituloEquipo{
+    color: #ffffff;
+}
+
+#tarjetaEquipo {
+    padding: .75rem 1.25rem;
+    background: white;
+    border-radius: 5px;
+    border-top: 1px solid #254f90;
+}
+
+#divIconDesarrollo {
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+}
+
+#divTextoServer {
+    min-width: 269.063px;
+}

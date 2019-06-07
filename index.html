@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Matrículas Infractoras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<script src="js/js.js"></script>
+
+<body>
+    <!--SECCIÓN BARRA NAVEGACIÓN-->
+    <nav id="menu" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand" id="titulo-lg">
+                <strong>Detección de Matrículas Infractoras</strong>
+            </a>
+            <a href="#" class="navbar-brand" id="titulo-xs">
+                <strong">Matrículas</strong>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#seccionInicio" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#seccionEquipo" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="#seccionDescarga" class="nav-link">Descarga</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--SECCIÓN INICIO-->
+    <section id="seccionInicio" class="inicio py-4 mt-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-4" id="divIconoProyecto">
+                    <img src="images/icono.png" alt="Radar" id="imgRadar" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h1 class="display-5 font-weight-bold text-primary my-3">Proyecto</h1>
+                    <p class="text-justify">Este proyecto es una aplicación móvil que, conectada a una cámara, capte las
+                        matrículas de los
+                        vehículos. Con el reconocimiento de imagen que tiene la aplicación, transformará la imagen de la
+                        matrícula en una cadena de texto para que, al hacer una consulta en la base de datos con la
+                        matrícula obtenida, identifique si el vehículo tiene o no infracciones y los cuerpos de
+                        seguridad
+                        puedan detener al vehículo infractor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCIÓN EQUIPO-->
+    <section id="seccionEquipo" class="equipo pb-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-5 order-1 mt-5">
+                    <img src="images/team2.png" alt="Equipo" class="imgTeam" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="display-6 font-weight-bold tituloEquipo my-3">Equipo de Trabajo</h1>
+                    <div class="container">
+                        <div id="tarjetaEquipo" class="row">
+                            <div class="col-xs-7">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Equipo de Desarrollo Android</h5>
+                                </div>
+                                <p class="text-justify" class="mb-1">Rafael Molino Álvarez<br />
+                                    Álvaro Muñoz Domínguez
+                                </p>
+                            </div>
+                            <div id="divIconDesarrollo" class="col-xs-5">
+                                <img src="./images/android.png" width="70px" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="tarjetaEquipo" class="row">
+                            <div class="col-xs-7">
+                                <div id="divTextoServer" class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Equipo de Desarrollo Server</h5>
+                                </div>
+                                <p class="text-justify" class="mb-1">Manuel Carrillo Alcalá<br />
+                                    José Kevin García Llopis
+                                </p>
+                            </div>
+                            <div id="divIconDesarrollo" class="col-xs-5">
+                                <img src="./images/server.png" width="70px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCIÓN DESCARGA-->
+
+    <section id="seccionDescarga" class="descarga pb-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-5 mt-5">
+                    <img src="images/descargar.png" width="250px" alt="Equipo" class="imgTeam" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="display-6 font-weight-bold text-primary my-3">Descargar App</h1>
+
+                    <h5 class="my-4">Si quieres descargar la aplicación pulsa el siguiente Botón:</h5>
+                    <button type="button" class="btn btn-lg btn-outline-primary mt-4">Descargar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PIE DE PÁGINA -->
+    <footer class="pie-de-pagina text-center bg-dark text-white">
+        <div class="container">
+            <p class="m-0 py-3">Copyright © 2019. Todos los derechos reservados. </p>
+        </div>
+    </footer>
+</body>
+
+</html>
